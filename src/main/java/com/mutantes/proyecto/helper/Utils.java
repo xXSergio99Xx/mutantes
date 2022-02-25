@@ -14,7 +14,7 @@ public class Utils {
             matrix = new char[row][column];
 
             for (int i = 0; i < row; i++) {
-                String data = dna[i];
+                String data = dna[i].toUpperCase();
                 for (int j = 0; j < column; j++) {
                     matrix[i][j] = data.charAt(j);
                 }

@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS stats;  
+CREATE TABLE stats (  
+    id INT AUTO_INCREMENT  PRIMARY KEY,  
+    result_type VARCHAR(6) NOT NULL
+);  
