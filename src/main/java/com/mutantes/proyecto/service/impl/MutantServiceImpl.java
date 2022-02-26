@@ -76,4 +76,34 @@ public class MutantServiceImpl implements MutantService{
 
         return statsResponse;
     }
+
+    @Override
+    public String validateData(String[] dna) {
+        String message = null;
+        try {
+            int row     = dna.length;
+
+            if(row > 0){
+                int column  = dna[0].length();
+                for (String string : dna) {
+                    if(string.length() == column){
+                        if(string.matches("^[aAtTcCgG]+$")){
+                            message = null;
+                        } else {
+                            message = "Only letters 'A, C, T, G' are allowed";
+                            break;
+                        }
+                    } else {
+                        message = "Column size does not match";
+                        break;
+                    }
+                }
+            } else {
+                message = "No data found";
+            }
+        } catch (Exception e) {
+            message = e.getMessage();
+        }
+        return message;
+    }
 }

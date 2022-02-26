@@ -7,4 +7,6 @@ public interface MutantService {
     public boolean isMutant(String[] dna);
 
     public StatsResponse stats();
+
+    public String validateData(String[] dna);
 }

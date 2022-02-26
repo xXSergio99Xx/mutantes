@@ -23,10 +23,15 @@ public class MutantController {
     @PostMapping("/mutant")
     public ResponseEntity<?> validateMutant(@RequestBody DnaRequest dna){
         try {
-            if(mutantService.isMutant(dna.getDna())){
-                return new ResponseEntity<>("Mutant", HttpStatus.OK);
+            String message = mutantService.validateData(dna.getDna());
+            if(message == null){
+                if(mutantService.isMutant(dna.getDna())){
+                    return new ResponseEntity<>("Mutant", HttpStatus.OK);
+                } else {
+                    return new ResponseEntity<>(HttpStatus.FORBIDDEN);
+                }
             } else {
-                return new ResponseEntity<>(HttpStatus.FORBIDDEN);
+                return new ResponseEntity<>(message, HttpStatus.BAD_REQUEST);
             }
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
