@@ -56,9 +56,6 @@ public class Utils {
                         }
                     }
                     if (isFound) {
-                        // sitio[0] = row;
-                        // sitio[1] = column;
-                        // sitio[2] = 2;
                         found = true;
                     }
                 }
@@ -74,9 +71,6 @@ public class Utils {
                         }
                     }
                     if (isFound) {
-                        // sitio[0] = row;
-                        // sitio[1] = column;
-                        // sitio[2] = 6;
                         found = true;
                     }
                 }
@@ -92,9 +86,6 @@ public class Utils {
                         }
                     }
                     if (isFound) {
-                        // sitio[0] = row;
-                        // sitio[1] = column;
-                        // sitio[2] = 4;
                         found = true;
                     }
                 }
@@ -110,9 +101,6 @@ public class Utils {
                         }
                     }
                     if (isFound) {
-                        // sitio[0] = row;
-                        // sitio[1] = column;
-                        // sitio[2] = 0;
                         found = true;
                     }
                 }
@@ -128,9 +116,6 @@ public class Utils {
                         }
                     }
                     if (isFound) {
-                        // sitio[0] = row;
-                        // sitio[1] = column;
-                        // sitio[2] = 1;
                         found = true;
                     }
                 }
@@ -147,9 +132,6 @@ public class Utils {
                         }
                     }
                     if (isFound) {
-                        // sitio[0] = row;
-                        // sitio[1] = column;
-                        // sitio[2] = 7;
                         found = true;
                     }
                 }
@@ -165,9 +147,6 @@ public class Utils {
                         }
                     }
                     if (isFound) {
-                        // sitio[0] = row;
-                        // sitio[1] = column;
-                        // sitio[2] = 3;
                         found = true;
                     }
                 }
@@ -183,9 +162,6 @@ public class Utils {
                         }
                     }
                     if (isFound) {
-                        // sitio[0] = row;
-                        // sitio[1] = column;
-                        // sitio[2] = 5;
                         found = true;
                     }
                 }

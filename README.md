@@ -23,91 +23,97 @@ _Luego de descargado e instalado configurar la variable de entorno JAVA_HOME. Pa
 https://www.pchardwarepro.com/como-configurar-java_home-en-windows-10/
 ```
 
+_También descargar apache maven. Para este proyecto se utiliza la versión 3.8.2 por lo que se recomienda instalar la misma para evitar inconvenientes_
+
+```
+https://maven.apache.org/download.cgi
+```
+
+_Se debe de configurar la variable MAVEN_HOME de forma similar a como se configuro la variable JAVA_HOME_
 
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_Para la instalación se debe tener los pre-requisito previamente descargados e instalados. Mirar **Pre-requisitos**_
 
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
+_Como primer paso clonar el proyecto o descargarlo en formato ZIP y descomprimirlo en la ruta del equipo que se desee_
 
 ```
-hasta finalizar
+git clone https://github.com/xXSergio99Xx/mutantes.git
 ```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+_Luego de descargar y descomprimir el proyecto, abrirlo con su editor de preferencia (Visual Studio Code, Intellij, NetBeans, Eclipse, Spring Suite Tools, etc)._
+
+_Descargar los complementos de Spring Boot en caso de que se requiera_
+
+_Intellij_
+```
+https://www.jetbrains.com/help/idea/spring-boot.html
+```
+
+_Visual Studio Code_
+```
+https://code.visualstudio.com/docs/java/java-spring-boot
+```
+
+_NetBeans_
+```
+https://www.techgalery.com/2019/01/how-to-create-spring-boot-project-using.html
+```
+
+_Eclipse_
+```
+https://spring.io/tools
+```
 
 ## Ejecutando las pruebas ⚙️
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
+_Las pruebas unitarias se encuentran en la ruta src/main/test/java/com/mutantes/proyecto._
+_Donde se podrán ejecutar para validar su exito y que cumplan con más del 80% requerido_
 
 ## Despliegue 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+_El proyecto se despliega en HEROKU ya que es una herramiento eficaz y que se conecta muy bien con GitHub para despliegues automaticos. Ademas que su versión gratuitad es bastante funcional para proyectos de aprendizaje_
+
+## EndPoints en CLOUD
+
+_POST /mutant_
+```
+https://mutanteprueba.herokuapp.com/mutant
+```
+_Ejemplo JSON_
+```
+{
+  "dna": [
+    "ATGCGA",
+    "CAGTGC",
+    "TTATGT",
+    "AGAAGG",
+    "CCCCTA",
+    "TCACTG"
+  ]
+}
+```
+
+_GET /stats_
+```
+https://mutanteprueba.herokuapp.com/stats
+```
+
+_En caso de no tener herramientas como POSTMAN o INSOMNIA para realizar pruebas a los endpoint. Se instalo SWAGGER el cual permite verificar los endpoint del proyecto y probarlos desde esta_
+
+```
+https://mutanteprueba.herokuapp.com/swagger-ui/index.html
+```
 
 ## Construido con 🛠️
 
 _Menciona las herramientas que utilizaste para crear tu proyecto_
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+* [Java] - Lenguaje de programación
+* [Maven] - Manejador de dependencias
+* [H2] - Base de datos en memoria embebida dentro del proyecto
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
-
-
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+* **Sergio Andres Rojas Giraldo** - [xXSergio99Xx](https://github.com/xXSergio99Xx)
