@@ -1,13 +1,10 @@
 package com.mutantes.proyecto.service.impl;
 
-import static org.mockito.ArgumentMatchers.anyString;
-
 import com.mutantes.proyecto.dto.http.StatsResponse;
 import com.mutantes.proyecto.model.Stats;
 import com.mutantes.proyecto.repository.StatsRepository;
 import com.mutantes.proyecto.service.MutantService;
 
-import org.aspectj.lang.annotation.Before;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
