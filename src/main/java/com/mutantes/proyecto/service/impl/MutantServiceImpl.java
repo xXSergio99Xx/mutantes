@@ -7,6 +7,7 @@ import com.mutantes.proyecto.helper.Utils;
 import com.mutantes.proyecto.model.Stats;
 import com.mutantes.proyecto.repository.StatsRepository;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import lombok.RequiredArgsConstructor;
@@ -65,6 +66,9 @@ public class MutantServiceImpl implements MutantService{
         
         Long countHuman     = statsRepository.countByResultType("HUMAN");
         Long countMutant    = statsRepository.countByResultType("MUTANT");
+
+        countHuman  = countHuman != null ? countHuman : 0;
+        countMutant = countMutant != null ? countMutant : 0;
 
         double ratio        = countMutant.doubleValue()/(countHuman.doubleValue() != 0 ? countHuman : 1l);
 
